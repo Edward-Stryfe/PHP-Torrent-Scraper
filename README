@@ -5,3 +5,6 @@
 
 Licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License
 http://creativecommons.org/licenses/by-sa/3.0/
+
+Additional Notes: 
+Don't forget to exclude E_WARNING, else it will throw php's warnings and display fsockopen() error for trackers that are unreachable. Of course, using error_reporting(E_ERROR | E_PARSE) will avoid this, or anything excluding E_WARNING
