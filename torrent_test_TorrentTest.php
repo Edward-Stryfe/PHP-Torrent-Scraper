@@ -12,7 +12,7 @@ class TorrentTest extends PHPUnit_Framework_TestCase {
      */
     protected $torrent;
     public function test_without_announce(){
-        $torrent = Torrent::fromFile(__DIR__.'/1992-06-15.torrent');
+        $torrent = Torrent::fromFile(__DIR__.'/torrent_test_1992-06-15.torrent');
         $this->assertNull($torrent->getAnnounce());
     }
     public function test_file(){
