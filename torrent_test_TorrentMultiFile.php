@@ -12,7 +12,7 @@ class TorrentTestMultiFile extends PHPUnit_Framework_TestCase {
      */
     protected $torrent;
     public function setUp(){
-        $this->torrent = Torrent::fromFile('multifile.torrent');
+        $this->torrent = Torrent::fromFile('torrent_test_multifile.torrent');
     }
     public function test_file(){
         $this->assertEquals('2010-08-10 - Krass 360° in Frankfurt (MULTICAM BD).mkv', $this->torrent->getFiles()[0]->getPath());
